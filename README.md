@@ -2,7 +2,7 @@
 # Projeto Redes - Belém e Castanhal
 
 
-![Texto alternativo](projeto.png)
+![Texto alternativo](Projeto.jpg)
 
 Projeto acadêmico de interligação de duas cidades utilizando:
 
