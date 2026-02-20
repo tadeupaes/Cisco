@@ -1,21 +1,17 @@
-
----
-
-! VLAN10 CAST -> só permite VLAN10 BELEM, nega VLAN20 BELEM
 access-list 210 permit ip 192.168.1.0 0.0.0.63 192.168.0.0 0.0.0.63
 access-list 210 deny   ip 192.168.1.0 0.0.0.63 192.168.0.64 0.0.0.63
 access-list 210 permit ip any any
 
 interface fa0/0.10
- ip access-group 210 in
+ip access-group 210 in
 
-! VLAN20 CAST -> só permite VLAN20 BELEM, nega VLAN10 BELEM
+
 access-list 220 permit ip 192.168.1.64 0.0.0.63 192.168.0.64 0.0.0.63
 access-list 220 deny   ip 192.168.1.64 0.0.0.63 192.168.0.0 0.0.0.63
 access-list 220 permit ip any any
 
 interface fa0/0.20
- ip access-group 220 in
+ip access-group 220 in
 
 end
 wr
