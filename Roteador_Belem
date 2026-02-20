@@ -1,10 +1,3 @@
-# Roteador Belém - R-BELEM
-
-Roteador responsável pela interligação das VLANs locais (Router-on-a-Stick)  
-e comunicação com a cidade de Castanhal via rota estática.
-
----
-
 enable
 conf t
 hostname BELEM
